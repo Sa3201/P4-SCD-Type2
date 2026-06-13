@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: source
+    database: P4_SCD2_DB
+    schema: BRONZE
+    tables:
+      - name: WORK_PRODUCT_COPY
+
+  - name: xfm
+    database: P4_SCD2_DB
+    schema: SILVER
+    tables:
+      - name: WORK_PRODUCT_TRANSFORM
